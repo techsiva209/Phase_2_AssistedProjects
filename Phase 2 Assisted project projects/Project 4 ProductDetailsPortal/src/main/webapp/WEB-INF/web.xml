@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>ProductDetailsPortal</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>ProductRegistrationServlet</display-name>
+    <servlet-name>ProductRegistrationServlet</servlet-name>
+    <servlet-class>servlet.ProductRegistrationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProductRegistrationServlet</servlet-name>
+    <url-pattern>/ProductRegistrationServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Product</display-name>
+    <servlet-name>Product</servlet-name>
+    <servlet-class>model.Product</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Product</servlet-name>
+    <url-pattern>/Product</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ProductRegistrationServlet1</display-name>
+    <servlet-name>ProductRegistrationServlet1</servlet-name>
+    <servlet-class>servlet.ProductRegistrationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProductRegistrationServlet1</servlet-name>
+    <url-pattern>/ProductRegistrationServlet1</url-pattern>
+  </servlet-mapping>
+</web-app>
